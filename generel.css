@@ -1,0 +1,258 @@
+/******** css-variabler *********/
+
+* {
+  margin: 0 auto;
+}
+@font-face {
+  font-family: "druk";
+  src: url("fonts/druk-medium-trail-webfront.woff") format("woff");
+}
+html {
+  --lyserød-color: #f9edfa;
+  --lilla-color: #1a1952;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+p,
+h2,
+h3,
+h4,
+ul,
+button {
+  letter-spacing: 1px;
+  color: #1a1952;
+  list-style: none;
+  font-family: "druk", sans-serif;
+  color: white;
+  /* margin-block-end: 5vh; */
+}
+.button1 {
+  display: flex;
+  margin-right: 29rem;
+}
+hr {
+  color: #db3eb1;
+  background-color: #eba8ef;
+  filter: drop-shadow(0 0 20px #db3eb1) contrast(2) brightness(2);
+
+  padding: 2px;
+  margin-bottom: 5px;
+}
+h2 {
+  margin-bottom: 2rem;
+  color: black;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  max-width: 65ch;
+  color: black;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+body {
+  background-color: white;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-block-start: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+header p {
+  color: black;
+}
+header .logo {
+  width: 5%;
+}
+
+#hjem {
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+  margin-inline-start: 1.8vh;
+}
+.main-menu {
+  margin-block: 0;
+}
+/* mouse-over */
+.toggle-btn a:hover {
+  color: #b0b0b0;
+}
+.main-menu ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  text-align: end;
+}
+
+/* textarea  */
+#textarea {
+  resize: none;
+  margin-top: 1em;
+}
+.pod {
+  margin-top: 3em;
+}
+.tekst_podcast {
+  margin-top: 3em;
+}
+/* burgermenu */
+.toggle-btn {
+  border: none;
+  cursor: pointer;
+  display: none;
+
+  font: italic;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 600px) {
+  html {
+    max-width: 100%;
+  }
+  .logo {
+    width: 200px;
+  }
+  .toggle-btn {
+    display: block;
+  }
+  .main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-menu ul {
+    display: none;
+    gap: 0px;
+  }
+  .main-menu.shown ul {
+    display: flex;
+    flex-flow: column;
+  }
+  header :active {
+    color: white;
+  }
+  header p {
+    font-size: 15px;
+    padding-block: 20%;
+  }
+  iframe {
+    max-width: 100%;
+  }
+  .tekst_podcast,
+  .instructions {
+    padding: 0px;
+  }
+}
+
+/*Footer*/
+.footer-container {
+  background-color: var(--lyserød-color);
+  color: white;
+  padding-top: 1rem;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1a1952;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding: 0px;
+  color: white;
+}
+.footer {
+  background-color: var(--lyserød-color);
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 20px;
+}
+.footer-col h5 {
+  margin-top: 1rem;
+  font-family: trajan-pro-3, serif;
+  font-size: 1.2rem;
+  color: #1a1952;
+  margin-bottom: 0.2rem;
+  font-weight: 300;
+  position: relative;
+  color: white;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  color: #1a1952;
+  color: white;
+  text-align: left;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+.footer-col ul li a {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #1a1952;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  color: white;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+img.footer-logo {
+  display: block;
+  margin-left: 1000px;
+  margin-top: -200px;
+  max-width: 45%;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-col {
+    width: 28%;
+    padding: 0 10px;
+  }
+  .footer-col ul li {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    color: white;
+    max-width: fit-content;
+  }
+  .footer-col ul li a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .copyright {
+    text-align: center;
+    font-size: 0.6rem;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+}

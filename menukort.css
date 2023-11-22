@@ -1,0 +1,49 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+.menu-title {
+  text-align: center;
+
+  color: black;
+  padding: 10px;
+}
+
+.menu-title h1 {
+  margin: 0;
+}
+.menu-card {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pizza-details-container {
+  flex-grow: 1;
+}
+
+.pizza-details {
+  line-height: 1.6;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.price {
+  color: #8e44ad;
+  font-weight: bold;
+}
