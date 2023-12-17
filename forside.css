@@ -1,0 +1,154 @@
+* {
+  margin: 0 auto;
+}
+
+main {
+  margin: 0;
+}
+figure {
+  max-width: 100%;
+}
+
+section {
+  padding-block: 15vh;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+h2 {
+  /* text-align: center; */
+  font-size: 35px;
+}
+h3 {
+  border-bottom: 2px solid white;
+  font-size: 35px;
+}
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 7vh;
+  font-style: italic;
+}
+a {
+  text-decoration: none;
+}
+
+#section_splash {
+  display: grid;
+  margin: 0;
+}
+
+.billede_splash {
+  margin: 0;
+}
+
+.boxes-container {
+  display: flex;
+  margin-top: 0px;
+}
+.boxes-container p {
+  color: white;
+}
+
+.green-box,
+.red-box,
+.map-box {
+  flex: 1;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.green-box {
+  background-color: rgb(17, 69, 17);
+  color: white;
+  gap: 10px;
+}
+
+.red-box {
+  background-color: rgb(149, 29, 29);
+  color: white;
+}
+
+.bottom-section {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Courgette", cursive;
+}
+
+.placeholder-text {
+  padding: 20px;
+  color: #333;
+  font-family: "Courgette", cursive;
+}
+.carlo-section {
+  display: flex;
+  margin-top: 20px;
+  font-family: "Courgette", cursive;
+}
+.carlo-section h2 {
+  padding-left: 15rem;
+}
+.carlo-info {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carlo-image {
+  flex: 1;
+}
+
+.carlo-image img {
+  width: 80%;
+  height: auto;
+}
+/*Mobileversion frontpage*/
+
+@media only screen and (max-width: 600px) {
+  .carlo-section h2 {
+    padding-left: 0;
+    font-size: 30px;
+    padding-left: 5em;
+  }
+
+  .boxes-container {
+    flex-direction: column;
+  }
+
+  .green-box,
+  .red-box {
+    width: 100%;
+    height: 100px;
+  }
+
+  .map-box {
+    height: 30px;
+  }
+
+  .carlo-section {
+    flex-direction: column;
+  }
+
+  .carlo-info {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .carlo-image {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .carlo-image img {
+    width: 100%;
+    height: auto;
+  }
+}

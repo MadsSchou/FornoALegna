@@ -1,0 +1,77 @@
+.contact-section {
+  display: flex;
+  margin: 150px;
+}
+
+.contact-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: trajan-pro-3, serif;
+}
+
+.contact-info h2 {
+  color: #333;
+  font-family: "Courgette", cursive;
+}
+.contact-info p {
+  font-family: trajan-pro-3, serif;
+  font-family: "Courgette", cursive;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 100px;
+  font-family: "Courgette", cursive;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+.facebookOGinsta {
+  margin-top: 20px;
+}
+
+.facebookOGinsta a {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.facebookOGinsta img {
+  width: 30px;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-section {
+    margin: 10px;
+  }
+
+  .contact-info {
+    padding: 10px;
+  }
+
+  .contact-info h2 {
+    font-size: 20px;
+  }
+
+  .contact-info p {
+    font-size: 14px;
+  }
+
+  .contact-section {
+    flex-direction: column;
+  }
+}

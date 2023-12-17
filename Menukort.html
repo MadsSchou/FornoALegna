@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="menukort.css" />
     <link rel="stylesheet" href="generel.css" />
+
     <title>Menukort</title>
   </head>
   <body>
     <header>
       <div class="logo" id="hjem">
         <a href="forside.html">
-          <img src="logo.jpeg" alt="logo" />
+          <img src="logo1.jpeg" alt="logo" />
         </a>
       </div>
       <nav class="main-menu">
         <div class="toggle-btn">☰</div>
         <ul>
           <li class="active">
-            <a href="index.html">
+            <a href="forside.html">
               <p>Forside</p>
             </a>
           </li>
@@ -33,23 +34,23 @@
               <p>Kontakt</p>
             </a>
           </li>
-          <li>
-            <a href="Omos.html">
-              <p>Om os</p>
-            </a>
-          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <div class="menu-card">
+      <div id="back-to-top" class="back-to-top">
+        <a href="#hjem"> <img src="arrow.png" /> </a>
+      </div>
+      <div class="main">
+        <button class="pizza-button" onclick="scrollToSection('klassiske-pizze')">Klassiske Pizze</button>
+        <button class="pizza-button" onclick="scrollToSection('hvide-pizze')">Hvide Pizze</button>
+        <button class="pizza-button" onclick="scrollToSection('delikate-pizze')">Delikate Pizze</button>
+      </div>
+      <div class="menu-card" id="klassiske-pizze">
         <div class="menu-title">
           <h1>Klassiske pizze</h1>
         </div>
-      </div>
-      <div class="menu-card">
-        <!-- Pizza 1 -->
         <div class="menu-item">
           <div class="pizza-details-container">
             <div class="pizza-details">
@@ -246,421 +247,465 @@
           <div class="price">88,00 DKK</div>
         </div>
       </div>
-      <div class="menu-card">
+
+      <div class="menu-card" id="hvide-pizze">
         <div class="menu-title">
           <h1>Hvide pizze (Uden tomat)</h1>
         </div>
+        <div class="menu-card">
+          <!-- Pizza 19 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>19. ZUCCA</h2>
+                <p>Squash, mozz, salsiccia, grana</p>
+              </div>
+            </div>
+            <div class="price">85,00 DKK</div>
+          </div>
+          <!-- Pizza 20 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>20. GORMELLA</h2>
+                <p>Ricotta, mozz, mortadella, gorgonzola</p>
+              </div>
+            </div>
+            <div class="price">92,00 DKK</div>
+          </div>
+
+          <!-- Pizza 21 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>21. BRACCIO DI FERRO</h2>
+                <p>Ricotta, mozz, spinat, grana</p>
+              </div>
+            </div>
+            <div class="price">87,00 DKK</div>
+          </div>
+
+          <!-- Pizza 22 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>22. CREMA DE CARCIOFI</h2>
+                <p>Mozz, rucola, cherrytomater, artiskokcreme</p>
+              </div>
+            </div>
+            <div class="price">83,00 DKK</div>
+          </div>
+
+          <!-- Pizza 23 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>23. RUCOLINA</h2>
+                <p>Mozz, rucola, bacon</p>
+              </div>
+            </div>
+            <div class="price">88,00 DKK</div>
+          </div>
+
+          <!-- Pizza 24 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>24. CARCIOFINA</h2>
+                <p>Artiskok, mozz, grana</p>
+              </div>
+            </div>
+            <div class="price">88,00 DKK</div>
+          </div>
+
+          <!-- Pizza 25 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>25. BUFALA</h2>
+                <p>Bøffelmozz, frisk tomat, persille</p>
+              </div>
+            </div>
+            <div class="price">83,00 DKK</div>
+          </div>
+
+          <!-- Pizza 26 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>26. TARTUFO</h2>
+                <p>Mozz, Karl Johan svampe, trøffel</p>
+              </div>
+            </div>
+            <div class="price">88,00 DKK</div>
+          </div>
+        </div>
       </div>
-      <div class="menu-card">
-        <!-- Pizza 19 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>19. ZUCCA</h2>
-              <p>Squash, mozz, salsiccia, grana</p>
-            </div>
-          </div>
-          <div class="price">85,00 DKK</div>
-        </div>
-        <!-- Pizza 20 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>20. GORMELLA</h2>
-              <p>Ricotta, mozz, mortadella, gorgonzola</p>
-            </div>
-          </div>
-          <div class="price">92,00 DKK</div>
-        </div>
 
-        <!-- Pizza 21 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>21. BRACCIO DI FERRO</h2>
-              <p>Ricotta, mozz, spinat, grana</p>
-            </div>
-          </div>
-          <div class="price">87,00 DKK</div>
-        </div>
-
-        <!-- Pizza 22 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>22. CREMA DE CARCIOFI</h2>
-              <p>Mozz, rucola, cherrytomater, artiskokcreme</p>
-            </div>
-          </div>
-          <div class="price">83,00 DKK</div>
-        </div>
-
-        <!-- Pizza 23 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>23. RUCOLINA</h2>
-              <p>Mozz, rucola, bacon</p>
-            </div>
-          </div>
-          <div class="price">88,00 DKK</div>
-        </div>
-
-        <!-- Pizza 24 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>24. CARCIOFINA</h2>
-              <p>Artiskok, mozz, grana</p>
-            </div>
-          </div>
-          <div class="price">88,00 DKK</div>
-        </div>
-
-        <!-- Pizza 25 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>25. BUFALA</h2>
-              <p>Bøffelmozz, frisk tomat, persille</p>
-            </div>
-          </div>
-          <div class="price">83,00 DKK</div>
-        </div>
-
-        <!-- Pizza 26 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>26. TARTUFO</h2>
-              <p>Mozz, Karl Johan svampe, trøffel</p>
-            </div>
-          </div>
-          <div class="price">88,00 DKK</div>
-        </div>
-      </div>
-      <div class="menu-card">
+      <div class="menu-card" id="delikate-pizze">
         <div class="menu-title">
           <h1>Delikate pizze</h1>
         </div>
-      </div>
-      <div class="menu-card">
-        <!-- Pizza 27 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>27. PARMIGIANA</h2>
-              <p>Tomat, mozz, aubergine, grana</p>
+        <div class="menu-card">
+          <!-- Pizza 27 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>27. PARMIGIANA</h2>
+                <p>Tomat, mozz, aubergine, grana</p>
+              </div>
             </div>
+            <div class="price">89,00 DKK</div>
           </div>
-          <div class="price">89,00 DKK</div>
-        </div>
-        <!-- Pizza 28 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>28. PARMA</h2>
-              <p>Tomat, mozz, parmaskinke</p>
+          <!-- Pizza 28 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>28. PARMA</h2>
+                <p>Tomat, mozz, parmaskinke</p>
+              </div>
             </div>
+            <div class="price">89,00 DKK</div>
           </div>
-          <div class="price">89,00 DKK</div>
-        </div>
 
-        <!-- Pizza 29 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>29. GORGONZOLA</h2>
-              <p>Tomat, mozz, gorgonzola, speck</p>
+          <!-- Pizza 29 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>29. GORGONZOLA</h2>
+                <p>Tomat, mozz, gorgonzola, speck</p>
+              </div>
             </div>
+            <div class="price">83,00 DKK</div>
           </div>
-          <div class="price">83,00 DKK</div>
-        </div>
 
-        <!-- Pizza 30 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>30. CARBONARA</h2>
-              <p>Tomat, mozz, bacon, grana</p>
+          <!-- Pizza 30 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>30. CARBONARA</h2>
+                <p>Tomat, mozz, bacon, grana</p>
+              </div>
             </div>
+            <div class="price">89,00 DKK</div>
           </div>
-          <div class="price">89,00 DKK</div>
-        </div>
 
-        <!-- Pizza 31 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>31. BRESAOLA</h2>
-              <p>Tomat, mozz, rucola, gorgonzola, bresaola</p>
+          <!-- Pizza 31 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>31. BRESAOLA</h2>
+                <p>Tomat, mozz, rucola, gorgonzola, bresaola</p>
+              </div>
             </div>
+            <div class="price">88,00 DKK</div>
           </div>
-          <div class="price">88,00 DKK</div>
-        </div>
 
-        <!-- Pizza 32 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>32. PIZZAIOLO</h2>
-              <p>Tomat, mozz, kartoffel, løg, salsiccia</p>
+          <!-- Pizza 32 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>32. PIZZAIOLO</h2>
+                <p>Tomat, mozz, kartoffel, løg, salsiccia</p>
+              </div>
             </div>
+            <div class="price">82,00 DKK</div>
           </div>
-          <div class="price">82,00 DKK</div>
-        </div>
 
-        <!-- Pizza 33 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>33. OTILIA</h2>
-              <p>Tomat, mozz, friske cherrytomater, pepperoni, kartoffel</p>
+          <!-- Pizza 33 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>33. OTILIA</h2>
+                <p>Tomat, mozz, friske cherrytomater, pepperoni, kartoffel</p>
+              </div>
             </div>
+            <div class="price">83,00 DKK</div>
           </div>
-          <div class="price">83,00 DKK</div>
-        </div>
 
-        <!-- Pizza 34 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>34. MARE</h2>
-              <p>Tomat, mozz, rejer musling, laks, persille</p>
+          <!-- Pizza 34 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>34. MARE</h2>
+                <p>Tomat, mozz, rejer musling, laks, persille</p>
+              </div>
             </div>
+            <div class="price">87,00 DKK</div>
           </div>
-          <div class="price">87,00 DKK</div>
-        </div>
 
-        <!-- Pizza 35 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>35. RUSTICA</h2>
-              <p>Tomat, mozz, mortadella, grana</p>
+          <!-- Pizza 35 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>35. RUSTICA</h2>
+                <p>Tomat, mozz, mortadella, grana</p>
+              </div>
             </div>
+            <div class="price">89,00 DKK</div>
           </div>
-          <div class="price">89,00 DKK</div>
-        </div>
 
-        <!-- Pizza 36 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>36. BUQUE DI BOSCO</h2>
-              <p>Tomat, mozz, champignon, speck</p>
+          <!-- Pizza 36 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>36. BUQUE DI BOSCO</h2>
+                <p>Tomat, mozz, champignon, speck</p>
+              </div>
             </div>
+            <div class="price">88,00 DKK</div>
           </div>
-          <div class="price">88,00 DKK</div>
-        </div>
 
-        <!-- Pizza 37 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>37. PANCETTA</h2>
-              <p>Tomat, mozz, spinat, paprika, pancetta</p>
+          <!-- Pizza 37 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>37. PANCETTA</h2>
+                <p>Tomat, mozz, spinat, paprika, pancetta</p>
+              </div>
             </div>
+            <div class="price">83,00 DKK</div>
           </div>
-          <div class="price">83,00 DKK</div>
-        </div>
 
-        <!-- Pizza 38 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>38. PAESANA</h2>
-              <p>Tomat, mozz, kartoffel, skinke, rosmarin</p>
+          <!-- Pizza 38 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>38. PAESANA</h2>
+                <p>Tomat, mozz, kartoffel, skinke, rosmarin</p>
+              </div>
             </div>
+            <div class="price">87,00 DKK</div>
           </div>
-          <div class="price">87,00 DKK</div>
-        </div>
 
-        <!-- Pizza 39 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>39. GUSTOSA</h2>
-              <p>Tomat, mozz, kartoffel, gorgonzola, speck</p>
+          <!-- Pizza 39 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>39. GUSTOSA</h2>
+                <p>Tomat, mozz, kartoffel, gorgonzola, speck</p>
+              </div>
             </div>
+            <div class="price">89,00 DKK</div>
           </div>
-          <div class="price">89,00 DKK</div>
-        </div>
 
-        <!-- Pizza 40 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>40. PATATA</h2>
-              <p>Tomat, mozz, kartoffel, oregano</p>
+          <!-- Pizza 40 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>40. PATATA</h2>
+                <p>Tomat, mozz, kartoffel, oregano</p>
+              </div>
             </div>
+            <div class="price">87,00 DKK</div>
           </div>
-          <div class="price">87,00 DKK</div>
-        </div>
 
-        <!-- Pizza 41 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>41. GENOVESE</h2>
-              <p>Tomat, mozz, grøn pesto, kartoffel, grana</p>
+          <!-- Pizza 41 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>41. GENOVESE</h2>
+                <p>Tomat, mozz, grøn pesto, kartoffel, grana</p>
+              </div>
             </div>
+            <div class="price">83,00 DKK</div>
           </div>
-          <div class="price">83,00 DKK</div>
-        </div>
 
-        <!-- Pizza 42 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>42. BANDIERA</h2>
-              <p>Tomat, mozz, ricotta, spinat, peberfrugt</p>
+          <!-- Pizza 42 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>42. BANDIERA</h2>
+                <p>Tomat, mozz, ricotta, spinat, peberfrugt</p>
+              </div>
             </div>
+            <div class="price">89,00 DKK</div>
           </div>
-          <div class="price">89,00 DKK</div>
-        </div>
 
-        <!-- Pizza 43 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>43. MEXICO</h2>
-              <p>Tomat, mozz, løg, bacon</p>
+          <!-- Pizza 43 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>43. MEXICO</h2>
+                <p>Tomat, mozz, løg, bacon</p>
+              </div>
             </div>
+            <div class="price">86,00 DKK</div>
           </div>
-          <div class="price">86,00 DKK</div>
-        </div>
 
-        <!-- Pizza 44 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>44. SCAMORZA</h2>
-              <p>Tomat, mozz, scamorza, parmaskinke</p>
+          <!-- Pizza 44 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>44. SCAMORZA</h2>
+                <p>Tomat, mozz, scamorza, parmaskinke</p>
+              </div>
             </div>
+            <div class="price">87,00 DKK</div>
           </div>
-          <div class="price">87,00 DKK</div>
-        </div>
-        <!-- Pizza 45 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>45. CALZONE (lukket)</h2>
-              <p>Tomat, mozz, champignon, skinke</p>
+          <!-- Pizza 45 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>45. CALZONE (lukket)</h2>
+                <p>Tomat, mozz, champignon, skinke</p>
+              </div>
             </div>
+            <div class="price">88,00 DKK</div>
           </div>
-          <div class="price">88,00 DKK</div>
-        </div>
 
-        <!-- Pizza 46 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>46. HAWAII</h2>
-              <p>Tomat, mozz, skinke, ananas</p>
+          <!-- Pizza 46 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>46. HAWAII</h2>
+                <p>Tomat, mozz, skinke, ananas</p>
+              </div>
             </div>
+            <div class="price">86,00 DKK</div>
           </div>
-          <div class="price">86,00 DKK</div>
-        </div>
 
-        <!-- Pizza 47 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>47. CONTADINA</h2>
-              <p>Tomat, mozz, gorgonzola, champignon, løg</p>
+          <!-- Pizza 47 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>47. CONTADINA</h2>
+                <p>Tomat, mozz, gorgonzola, champignon, løg</p>
+              </div>
             </div>
+            <div class="price">83,00 DKK</div>
           </div>
-          <div class="price">83,00 DKK</div>
-        </div>
 
-        <!-- Pizza 48 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>48. MEDITERRANEA</h2>
-              <p>Tomat, mozz, løg, oliven, ansjoser, oregano, chiliolie, hvidløg, frisk tomat</p>
+          <!-- Pizza 48 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>48. MEDITERRANEA</h2>
+                <p>Tomat, mozz, løg, oliven, ansjoser, oregano, chiliolie, hvidløg, frisk tomat</p>
+              </div>
             </div>
+            <div class="price">83,00 DKK</div>
           </div>
-          <div class="price">83,00 DKK</div>
-        </div>
 
-        <!-- Pizza 49 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>49. QUATTRO FORMAGGI</h2>
-              <p>Tomat, mozz, grana, gorgonzola, fontina</p>
+          <!-- Pizza 49 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>49. QUATTRO FORMAGGI</h2>
+                <p>Tomat, mozz, grana, gorgonzola, fontina</p>
+              </div>
             </div>
+            <div class="price">87,00 DKK</div>
           </div>
-          <div class="price">87,00 DKK</div>
-        </div>
 
-        <!-- Pizza 50 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>50. RUCOLA</h2>
-              <p>Tomat, mozz, gorgonzola, parmaskinke, rucola</p>
+          <!-- Pizza 50 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>50. RUCOLA</h2>
+                <p>Tomat, mozz, gorgonzola, parmaskinke, rucola</p>
+              </div>
             </div>
+            <div class="price">87,00 DKK</div>
           </div>
-          <div class="price">87,00 DKK</div>
-        </div>
 
-        <!-- Pizza 51 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>51. PORCINI</h2>
-              <p>Tomat, mozz, Karl Johan svampe</p>
+          <!-- Pizza 51 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>51. PORCINI</h2>
+                <p>Tomat, mozz, Karl Johan svampe</p>
+              </div>
             </div>
+            <div class="price">87,00 DKK</div>
           </div>
-          <div class="price">87,00 DKK</div>
-        </div>
 
-        <!-- Pizza 52 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>52. PIZZA DELLA CASA</h2>
-              <p>Tomat, mozz, gorgonzola, rucola, stærk salami</p>
+          <!-- Pizza 52 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>52. PIZZA DELLA CASA</h2>
+                <p>Tomat, mozz, gorgonzola, rucola, stærk salami</p>
+              </div>
             </div>
+            <div class="price">86,00 DKK</div>
           </div>
-          <div class="price">86,00 DKK</div>
-        </div>
 
-        <!-- Pizza 53 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>53. VEGETARIANA</h2>
-              <p>Tomat, mozz, blandede grøntsager</p>
+          <!-- Pizza 53 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>53. VEGETARIANA</h2>
+                <p>Tomat, mozz, blandede grøntsager</p>
+              </div>
             </div>
+            <div class="price">89,00 DKK</div>
           </div>
-          <div class="price">89,00 DKK</div>
-        </div>
-        <!-- Pizza 54 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>54. ROMANA</h2>
-              <p>Tomat, mozz, bacon, æg, grana</p>
+          <!-- Pizza 54 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>54. ROMANA</h2>
+                <p>Tomat, mozz, bacon, æg, grana</p>
+              </div>
             </div>
+            <div class="price">89,00 DKK</div>
           </div>
-          <div class="price">89,00 DKK</div>
-        </div>
 
-        <!-- Pizza 55 -->
-        <div class="menu-item">
-          <div class="pizza-details-container">
-            <div class="pizza-details">
-              <h2>MÅNEDENS PIZZA</h2>
-              <p>Se skiltet i butikken eller spørg os endelig gerne!</p>
+          <!-- Pizza 55 -->
+          <div class="menu-item">
+            <div class="pizza-details-container">
+              <div class="pizza-details">
+                <h2>MÅNEDENS PIZZA</h2>
+                <p>Se skiltet i butikken eller spørg os endelig gerne!</p>
+              </div>
             </div>
+            <div class="price">Se skilt</div>
           </div>
-          <div class="price">Se skilt</div>
         </div>
       </div>
     </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h5>Forno a legna</h5>
+              <hr />
+              <ul>
+                <li><a href="forside.html">Forside</a></li>
+                <li><a href="Menukort.html">Menukort</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+                <li><a href="Omos.html">Om os</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5>Sociale medier</h5>
+              <hr />
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/fornoalegnaKBH">Facebook</a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/forno_a_legna/">Instagram</a>
+                </li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5>Kontakt os</h5>
+              <hr />
+              <ul>
+                <li>Falkoner Alle 42</li>
+                <li>Frederiksberg C</li>
+                <li>Danmark</li>
+                <li>+45 35 39 50 12</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script src="script.js"></script>
 </html>
